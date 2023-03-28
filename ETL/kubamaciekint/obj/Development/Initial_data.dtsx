@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/12/2022 10:28:25 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-MGO9KG4"
+  DTS:CreatorName="DESKTOP-MGO9KG4\jakub"
+  DTS:DTSID="{9B6F6ED3-F27C-4F59-869E-A89BA86DD57B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{34C33BB4-C897-4C63-8ADA-6662D72E798C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-MGO9KG4.KUBAMACIEK]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7C481AEF-8956-4D38-ABF1-745D2B092429}"
+      DTS:ObjectName="DESKTOP-MGO9KG4.KUBAMACIEK">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-MGO9KG4;Initial Catalog=KUBAMACIEK;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MACIEJ.KUBAMACIEK]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{169035AF-B40A-4AD3-82B9-A2232DE5B372}"
+      DTS:ObjectName="MACIEJ.KUBAMACIEK">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=MACIEJ;Initial Catalog=KUBAMACIEK;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[time_insert.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{C911CB71-EA09-413B-AA00-99BE240D76BB}"
+      DTS:ObjectName="time_insert.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\Maciej\OneDrive\Pulpit\DATA_WAREHOUSE\time_insert.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Populating date"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C807EFDD-D14E-43C4-96BB-9F53644075B8}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Populating date"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{169035AF-B40A-4AD3-82B9-A2232DE5B372}"
+          SQLTask:SqlStatementSource="DECLARE  @Start datetime&#xA;         ,@End  datetime&#xA;DECLARE @AllDates table&#xA;        (Date datetime)&#xA;&#xA;SELECT @Start = '2020-01-01', @End = '2020-12-31';&#xA;&#xA;WITH Nbrs_3( n ) AS ( SELECT 1 UNION SELECT 0 ),&#xA;     Nbrs_2( n ) AS ( SELECT 1 FROM Nbrs_3 n1 CROSS JOIN Nbrs_3 n2 ),&#xA;     Nbrs_1( n ) AS ( SELECT 1 FROM Nbrs_2 n1 CROSS JOIN Nbrs_2 n2 ),&#xA;     Nbrs_0( n ) AS ( SELECT 1 FROM Nbrs_1 n1 CROSS JOIN Nbrs_1 n2 ),&#xA;     Nbrs  ( n ) AS ( SELECT 1 FROM Nbrs_0 n1 CROSS JOIN Nbrs_0 n2 )&#xA;    insert into date_table&#xA;    SELECT @Start+n-1 as &quot;Date&quot;, CAST(YEAR(@Start+n-1) AS VARCHAR(4)) as Year, case month(@Start+n-1)&#xA;WHEN 1 THEN 'January'&#xA;WHEN 2 THEN 'February'&#xA;WHEN 3 THEN 'March'&#xA;WHEN 4 THEN 'April'&#xA;WHEN 5 THEN 'May'&#xA;WHEN 6 THEN 'June'&#xA;WHEN 7 THEN 'July'&#xA;WHEN 8 THEN 'August'&#xA;WHEN 9 THEN 'September'&#xA;WHEN 10 THEN 'October'&#xA;WHEN 11 THEN 'November'&#xA;WHEN 12 THEN 'December'&#xA;END as &quot;Month&quot;, CASE DATEPART(&quot;dw&quot;, @Start+n-1)&#xA;WHEN 1 THEN 'Sunday'&#xA;WHEN 2 THEN 'Monday'&#xA;WHEN 3 THEN 'Tuesday'&#xA;WHEN 4 THEN 'Wednesday'&#xA;WHEN 5 THEN 'Thursday'&#xA;WHEN 6 THEN 'Friday'&#xA;WHEN 7 THEN  'Saturday'&#xA;END as weekDay&#xA;&#xA;FROM (SELECT ROW_NUMBER() OVER (ORDER BY n)&#xA;            FROM Nbrs ) D ( n )&#xA;    WHERE n &lt;= DATEDIFF(day,@Start,@End)+1 ;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Populating time"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{557DA482-BFE9-478A-BE44-F6ACB514E3D1}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Populating time"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{169035AF-B40A-4AD3-82B9-A2232DE5B372}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="time_insert.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Populating date"
+          TopLeft="569.5,66.5" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Populating time"
+          TopLeft="354.5,67.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

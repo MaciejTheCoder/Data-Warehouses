@@ -1,0 +1,351 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="364dd250-12f3-45c9-8251-d1e33d7c6a6f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Kuba Maciek</ID>
+  <Name>Kuba Maciek</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Kuba Maciek 1</DataSourceID>
+  <Schema>
+    <xs:schema id="Kuba_x0020_Maciek" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Kuba_x0020_Maciek" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="85fd0a41-2664-45c8-976a-481e22a2bb86">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_course_FACT" msprop:design-time-name="cb319f9d-5a06-4f2b-83eb-680b4173b159" msprop:DbTableName="course_FACT" msprop:FriendlyName="course_FACT" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="course_id" msprop:design-time-name="c193498f-2ca8-4903-b73e-0a8721df755c" msprop:DbColumnName="course_id" msprop:FriendlyName="course_id" type="xs:int" />
+                  <xs:element name="date_of_course" msprop:design-time-name="f724f1c6-e281-4d84-b296-5b49877a25a6" msprop:DbColumnName="date_of_course" msprop:FriendlyName="date_of_course" type="xs:int" minOccurs="0" />
+                  <xs:element name="start_time" msprop:design-time-name="5fa5be03-54f6-45ef-bc0f-6a05b5a8deac" msprop:DbColumnName="start_time" msprop:FriendlyName="start_time" type="xs:int" minOccurs="0" />
+                  <xs:element name="finish_time" msprop:design-time-name="a3668e0c-b684-4b80-b9da-bc1759f7454f" msprop:DbColumnName="finish_time" msprop:FriendlyName="finish_time" type="xs:int" minOccurs="0" />
+                  <xs:element name="tram_id" msprop:design-time-name="a5673bb4-f401-4ae2-a98d-7e471ce988e6" msprop:DbColumnName="tram_id" msprop:FriendlyName="tram_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="driver_id" msprop:design-time-name="5529f934-f296-4210-b501-31304036ffa4" msprop:DbColumnName="driver_id" msprop:FriendlyName="driver_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="line_id" msprop:design-time-name="fa05402f-45a7-4266-a19a-1a05d2fbe630" msprop:DbColumnName="line_id" msprop:FriendlyName="line_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="course_total_time" msprop:design-time-name="87187814-be51-46c1-8a20-fc4f1d516ee9" msprop:DbColumnName="course_total_time" msprop:FriendlyName="course_total_time" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_date_table" msprop:design-time-name="e576d3fb-cf0e-48eb-9e36-63b0b7055b0e" msprop:DbTableName="date_table" msprop:FriendlyName="date_table" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="date_id" msprop:design-time-name="ef774c16-4593-4053-bfd8-9f465831119d" msprop:DbColumnName="date_id" msprop:FriendlyName="date_id" type="xs:int" />
+                  <xs:element name="date" msprop:design-time-name="da954f72-27c3-4c42-a524-cc123b544f50" msprop:DbColumnName="date" msprop:FriendlyName="date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="year" msprop:design-time-name="bc68feb7-b4a4-4c42-b2aa-c82d5007d419" msprop:DbColumnName="year" msprop:FriendlyName="year" type="xs:int" minOccurs="0" />
+                  <xs:element name="month" msprop:design-time-name="95cca2a8-fc7f-4a3a-ae8e-9fe3de9fa4f1" msprop:DbColumnName="month" msprop:FriendlyName="month" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="day_of_week" msprop:design-time-name="87038aec-7a54-4ca8-a032-54f510cdadbf" msprop:DbColumnName="day_of_week" msprop:FriendlyName="day_of_week" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_driver" msprop:design-time-name="bbe46acc-f3cc-4e82-a88c-192ac0dc90f5" msprop:DbTableName="driver" msprop:FriendlyName="driver" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="driver_id" msprop:design-time-name="6d4f0a57-3cfb-4843-9811-9822af4e9bb0" msprop:DbColumnName="driver_id" msprop:FriendlyName="driver_id" type="xs:int" />
+                  <xs:element name="name_surname" msprop:design-time-name="ec1e0b5c-bf13-448a-ab9a-677e5369b59c" msprop:DbColumnName="name_surname" msprop:FriendlyName="name_surname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="64" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="type_of_driver" msprop:design-time-name="59915bef-9cbd-454b-812a-b92712da017c" msprop:DbColumnName="type_of_driver" msprop:FriendlyName="type_of_driver" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_line" msprop:design-time-name="8324d6f1-4c51-47a0-8075-22a19ec3e3d0" msprop:DbTableName="line" msprop:FriendlyName="line" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="line_id" msprop:design-time-name="43375d6c-5e23-4529-b91f-0928ba19fdfa" msprop:DbColumnName="line_id" msprop:FriendlyName="line_id" type="xs:int" />
+                  <xs:element name="line_name" msprop:design-time-name="6d040cb9-dc34-48b0-ac82-ff6b7f46e65c" msprop:DbColumnName="line_name" msprop:FriendlyName="line_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="12" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_model" msprop:design-time-name="dc3de61b-721d-4304-bc91-a894994a7d23" msprop:DbTableName="model" msprop:FriendlyName="model" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="model_id" msprop:design-time-name="7b2b3e26-aaa0-4f6e-81f4-dd1d4290b773" msprop:DbColumnName="model_id" msprop:FriendlyName="model_id" type="xs:int" />
+                  <xs:element name="name" msprop:design-time-name="1ff26431-cbcd-4bac-bfaf-6295522c3a3c" msprop:DbColumnName="name" msprop:FriendlyName="name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="32" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="producer" msprop:design-time-name="162b7d7a-fc82-4346-959a-bfbb4ee5f9e7" msprop:DbColumnName="producer" msprop:FriendlyName="producer" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="32" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_passenger_FACT" msprop:design-time-name="d8791b6f-3ee1-44c9-b9fa-e88a8bb42f55" msprop:DbTableName="passenger_FACT" msprop:FriendlyName="passenger_FACT" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="person_id" msprop:design-time-name="c150c6da-d331-4fc1-b9e2-a67eca65f8f4" msprop:DbColumnName="person_id" msprop:FriendlyName="person_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="start_stop_id" msprop:design-time-name="15c680e9-c278-447b-9bba-aff490669f30" msprop:DbColumnName="start_stop_id" msprop:FriendlyName="start_stop_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="leave_stop_id" msprop:design-time-name="d3002a05-280a-4355-a214-d5c2bf1d747c" msprop:DbColumnName="leave_stop_id" msprop:FriendlyName="leave_stop_id" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_person" msprop:design-time-name="7c8731b4-1578-4f21-b757-c7390b866612" msprop:DbTableName="person" msprop:FriendlyName="person" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="person_id" msprop:design-time-name="590e00c0-2b30-416b-81db-9c1013f287c6" msprop:DbColumnName="person_id" msprop:FriendlyName="person_id" type="xs:int" />
+                  <xs:element name="pesel" msprop:design-time-name="13a02dc6-5236-42dd-bde2-517fd11298ad" msprop:DbColumnName="pesel" msprop:FriendlyName="pesel" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="name_surname" msprop:design-time-name="1f85247b-b3cd-4b0a-9292-fa59dba1c7b1" msprop:DbColumnName="name_surname" msprop:FriendlyName="name_surname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="64" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_stopped_at_FACT" msprop:design-time-name="817cd6ac-4e3f-4852-9a65-883cc204e2d9" msprop:DbTableName="stopped_at_FACT" msprop:FriendlyName="stopped_at_FACT" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="course_id" msprop:design-time-name="e041dd03-2ee9-4c20-a8a0-839238403c52" msprop:DbColumnName="course_id" msprop:FriendlyName="course_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="tram_stop_id" msprop:design-time-name="e7998ee5-7f3c-4146-9625-9cff769ac965" msprop:DbColumnName="tram_stop_id" msprop:FriendlyName="tram_stop_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="stop_time_id" msprop:design-time-name="00f69557-2032-41e1-91c5-5c4c0f01ca04" msprop:DbColumnName="stop_time_id" msprop:FriendlyName="stop_time_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="number_of_passengers_entering" msprop:design-time-name="b81fff2e-b313-4e32-aa25-b2918d6b464e" msprop:DbColumnName="number_of_passengers_entering" msprop:FriendlyName="number_of_passengers_entering" type="xs:int" minOccurs="0" />
+                  <xs:element name="number_of_passenger_leaving" msprop:design-time-name="ce3d3c1b-02d6-41b8-9404-2f883d34d301" msprop:DbColumnName="number_of_passenger_leaving" msprop:FriendlyName="number_of_passenger_leaving" type="xs:int" minOccurs="0" />
+                  <xs:element name="number_of_free_seats" msprop:design-time-name="05636755-f114-4342-9efd-cbe76d978040" msprop:DbColumnName="number_of_free_seats" msprop:FriendlyName="number_of_free_seats" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_time_table" msprop:design-time-name="5618d0ac-bc30-4529-bcf9-74007cef6d04" msprop:DbTableName="time_table" msprop:FriendlyName="time_table" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="time_id" msprop:design-time-name="d17e78f2-52ad-40a5-8b2e-5b75f906477f" msprop:DbColumnName="time_id" msprop:FriendlyName="time_id" type="xs:int" />
+                  <xs:element name="hour" msprop:design-time-name="8b0ae3d4-e960-410a-bcfd-2eeb20727674" msprop:DbColumnName="hour" msprop:FriendlyName="hour" type="xs:int" minOccurs="0" />
+                  <xs:element name="minute" msprop:design-time-name="2336c67f-e47a-4afb-83bc-86a99d0a0034" msprop:DbColumnName="minute" msprop:FriendlyName="minute" type="xs:int" minOccurs="0" />
+                  <xs:element name="time_of_day" msprop:design-time-name="cab245f4-60d1-4c3c-bbda-d39eee4eb3fc" msprop:DbColumnName="time_of_day" msprop:FriendlyName="time_of_day" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="32" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_tram" msprop:design-time-name="1dc59870-db7d-4edd-a1ad-476752ee191a" msprop:DbTableName="tram" msprop:FriendlyName="tram" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="tram_id" msprop:design-time-name="472d810c-27e2-4a07-9165-85ff491d0a5a" msprop:DbColumnName="tram_id" msprop:FriendlyName="tram_id" type="xs:int" />
+                  <xs:element name="tram_side_number" msprop:design-time-name="053c126c-879a-4e51-a49c-512fcdf9c3cd" msprop:DbColumnName="tram_side_number" msprop:FriendlyName="tram_side_number" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="model_id" msprop:design-time-name="f459272d-d066-42cb-9c6b-42524f1769fe" msprop:DbColumnName="model_id" msprop:FriendlyName="model_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="year_of_production" msprop:design-time-name="64f3f042-6992-4dd8-bfe4-d9ac4d1e452f" msprop:DbColumnName="year_of_production" msprop:FriendlyName="year_of_production" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_tram_stop" msprop:design-time-name="9f29743b-dc09-4607-97e2-0ffba5d5181a" msprop:DbTableName="tram_stop" msprop:FriendlyName="tram_stop" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="tram_stop_id" msprop:design-time-name="1f6a0ac2-32f8-4079-9bf4-98ac7a4dbc49" msprop:DbColumnName="tram_stop_id" msprop:FriendlyName="tram_stop_id" type="xs:int" />
+                  <xs:element name="single_stop" msprop:design-time-name="7353b340-ac74-4829-806e-5a12f127881e" msprop:DbColumnName="single_stop" msprop:FriendlyName="single_stop" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="32" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="name" msprop:design-time-name="689e8961-1c45-46e1-9741-c1a2228e24b9" msprop:DbColumnName="name" msprop:FriendlyName="name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="32" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="city" msprop:design-time-name="3e8a1ffe-f27d-4f5e-a84f-098aa9e64553" msprop:DbColumnName="city" msprop:FriendlyName="city" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="district" msprop:design-time-name="95bd0e97-125e-4b20-9b8a-2c44eca25290" msprop:DbColumnName="district" msprop:FriendlyName="district" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="residential" msprop:design-time-name="e86dbd15-234b-4b54-a9ec-375a0484a586" msprop:DbColumnName="residential" msprop:FriendlyName="residential" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_course_FACT" />
+          <xs:field xpath="course_id" />
+        </xs:unique>
+        <xs:unique name="dbo_date_table_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_date_table" />
+          <xs:field xpath="date_id" />
+        </xs:unique>
+        <xs:unique name="dbo_driver_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_driver" />
+          <xs:field xpath="driver_id" />
+        </xs:unique>
+        <xs:unique name="dbo_line_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_line" />
+          <xs:field xpath="line_id" />
+        </xs:unique>
+        <xs:unique name="dbo_model_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_model" />
+          <xs:field xpath="model_id" />
+        </xs:unique>
+        <xs:unique name="dbo_person_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_person" />
+          <xs:field xpath="person_id" />
+        </xs:unique>
+        <xs:unique name="dbo_time_table_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_time_table" />
+          <xs:field xpath="time_id" />
+        </xs:unique>
+        <xs:unique name="dbo_tram_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_tram" />
+          <xs:field xpath="tram_id" />
+        </xs:unique>
+        <xs:unique name="dbo_tram_stop_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_tram_stop" />
+          <xs:field xpath="tram_stop_id" />
+        </xs:unique>
+        <xs:keyref name="FK__tram__model_id__2E1BDC42" refer="dbo_model_Constraint1">
+          <xs:selector xpath=".//dbo_tram" />
+          <xs:field xpath="model_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__stopped_a__stop___3D5E1FD2" refer="dbo_time_table_Constraint1">
+          <xs:selector xpath=".//dbo_stopped_at_FACT" />
+          <xs:field xpath="stop_time_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__stopped_a__cours__3B75D760" refer="Constraint1">
+          <xs:selector xpath=".//dbo_stopped_at_FACT" />
+          <xs:field xpath="course_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__stopped_a__tram___3C69FB99" refer="dbo_tram_stop_Constraint1">
+          <xs:selector xpath=".//dbo_stopped_at_FACT" />
+          <xs:field xpath="tram_stop_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__passenger__perso__3F466844" refer="dbo_person_Constraint1">
+          <xs:selector xpath=".//dbo_passenger_FACT" />
+          <xs:field xpath="person_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__passenger__leave__412EB0B6" refer="dbo_tram_stop_Constraint1">
+          <xs:selector xpath=".//dbo_passenger_FACT" />
+          <xs:field xpath="leave_stop_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__passenger__start__403A8C7D" refer="dbo_tram_stop_Constraint1">
+          <xs:selector xpath=".//dbo_passenger_FACT" />
+          <xs:field xpath="start_stop_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__course_FA__finis__36B12243" refer="dbo_time_table_Constraint1">
+          <xs:selector xpath=".//dbo_course_FACT" />
+          <xs:field xpath="finish_time" />
+        </xs:keyref>
+        <xs:keyref name="FK__course_FA__start__35BCFE0A" refer="dbo_time_table_Constraint1">
+          <xs:selector xpath=".//dbo_course_FACT" />
+          <xs:field xpath="start_time" />
+        </xs:keyref>
+        <xs:keyref name="FK__course_FA__drive__38996AB5" refer="dbo_driver_Constraint1">
+          <xs:selector xpath=".//dbo_course_FACT" />
+          <xs:field xpath="driver_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__course_FA__tram___37A5467C" refer="dbo_tram_Constraint1">
+          <xs:selector xpath=".//dbo_course_FACT" />
+          <xs:field xpath="tram_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__course_FA__line___398D8EEE" refer="dbo_line_Constraint1">
+          <xs:selector xpath=".//dbo_course_FACT" />
+          <xs:field xpath="line_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__course_FA__date___34C8D9D1" refer="dbo_date_table_Constraint1">
+          <xs:selector xpath=".//dbo_course_FACT" />
+          <xs:field xpath="date_of_course" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Kuba_x0020_Maciek xmlns="" />
+  </Schema>
+</DataSourceView>

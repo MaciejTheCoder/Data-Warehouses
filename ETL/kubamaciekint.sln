@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "kubamaciekint", "kubamaciekint\kubamaciekint.dtproj", "{C3E77D28-6DF5-4BA2-9807-553AFE9CB74E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3E77D28-6DF5-4BA2-9807-553AFE9CB74E}.Development|Default.ActiveCfg = Development
+		{C3E77D28-6DF5-4BA2-9807-553AFE9CB74E}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9ABF4A0-2886-4F30-8887-E37C2D800F04}
+	EndGlobalSection
+EndGlobal

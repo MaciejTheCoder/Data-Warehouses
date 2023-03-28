@@ -1,0 +1,117 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>MaciekIKuba</Database>
+    <Server>DESKTOP-MGO9KG4</Server>
+    <ConnectionString>Data Source=DESKTOP-MGO9KG4;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>9Lx7sNQe4tM3T9/D1ZWOYnY1+9Y=08.05.2022 23:31:3224.04.2022 22:55:37</TimeStamp>
+        <ID>
+          <String>Kuba Maciek 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>jynQlkr2pQ0W6HWKXSid6gMpNtI=08.05.2022 23:29:4624.04.2022 22:56:54</TimeStamp>
+        <ID>
+          <String>Kuba Maciek</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FJCCtWVY/qExqwPcWsOCiOQrjTQ=24.04.2022 23:48:1024.04.2022 22:59:36</TimeStamp>
+        <ID>
+          <String>Date Table</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Xy4p9lpppA3zAbLtEiZlPQFGdpc=24.04.2022 23:01:5924.04.2022 22:59:36</TimeStamp>
+        <ID>
+          <String>Line</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6OOjr2Sr0dbCnK8/FvM/LAn2pzw=24.04.2022 23:02:0624.04.2022 22:59:36</TimeStamp>
+        <ID>
+          <String>Driver</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Zl4V/8U1Pzkszd1huBfzpiIo710=24.04.2022 23:19:5924.04.2022 22:59:36</TimeStamp>
+        <ID>
+          <String>Time Table</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9pTO25K7ccZLJLaduOJkVB7bWB8=24.04.2022 23:06:4024.04.2022 22:59:36</TimeStamp>
+        <ID>
+          <String>Tram Stop</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>qOR5n6HdgaMzMAKCBr/jMbbtSrc=24.04.2022 23:02:3424.04.2022 22:59:36</TimeStamp>
+        <ID>
+          <String>Person</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>r88fDP6GEAiiC///XcaLrnuOWBM=25.04.2022 01:26:1224.04.2022 22:59:36</TimeStamp>
+        <ID>
+          <String>Course FACT</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ieD+5D1/700KRopPyYr8Oqyvldg=08.05.2022 23:44:0108.05.2022 23:44:01</TimeStamp>
+        <ID>
+          <String>Model</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DSGEUs4ABWBlZIcz/bFnKnDv2bk=08.05.2022 23:45:1708.05.2022 23:43:35</TimeStamp>
+        <ID>
+          <String>Tram</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>U+QH0kTPWchEneNyTvNozNJ4jso=08.05.2022 23:57:0824.04.2022 22:59:36TCJI2DtEKk+7x12kYm8j2dRFVVc=08.05.2022 23:55:3624.04.2022 22:59:36</TimeStamp>
+        <ID>
+          <String>Kuba Maciek</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>rfj/slH0DrNSe3SRLzipPNNayxA=24.04.2022 22:49:4624.04.2022 22:49:46</TimeStamp>
+      <ID>
+        <String>MaciekIKuba</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-05-08T21:57:24.106667Z</LastDeployed>
+</DeploymentSnapshot>

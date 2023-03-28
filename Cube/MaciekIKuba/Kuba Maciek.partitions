@@ -1,0 +1,125 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="be967349-bd50-4b37-923b-35efdcf12bb3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Kuba Maciek</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Course FACT</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3fd33a8e-8e80-4237-93c8-89571861f509">
+          <ID>Course FACT</ID>
+          <Name>Course FACT</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a81b5a9c-260d-410e-b93d-06f4c973b59d">
+            <DataSourceViewID>Kuba Maciek</DataSourceViewID>
+            <TableID>dbo_course_FACT</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Passenger FACT</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0a21f974-45c4-40f2-ae47-8ca4a963ae81">
+          <ID>Passenger FACT</ID>
+          <Name>Passenger FACT</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c62396d5-319e-4615-923b-62845fc3cb88">
+            <DataSourceViewID>Kuba Maciek</DataSourceViewID>
+            <TableID>dbo_passenger_FACT</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Stopped At FACT</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="402448ea-37cc-42c7-8117-e9890cf63eed">
+          <ID>Stopped At FACT</ID>
+          <Name>Stopped At FACT</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9e8d1e46-7e0f-4473-ab42-1db13803d950">
+            <DataSourceViewID>Kuba Maciek</DataSourceViewID>
+            <TableID>dbo_stopped_at_FACT</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Course FACT 2</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="746966c2-916d-4bc7-8efb-1cd4572a4437">
+          <ID>Course FACT</ID>
+          <Name>Course FACT</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="239ddbc4-9bee-41d2-adca-45f66b8f5f01">
+            <DataSourceViewID>Kuba Maciek</DataSourceViewID>
+            <TableID>dbo_course_FACT</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Course FACT 3</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="089d60b7-3967-494f-a996-eb8136bb8345">
+          <ID>Course FACT</ID>
+          <Name>Course FACT</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c98fe24c-da7c-4770-805e-f081f37bee9a">
+            <DataSourceViewID>Kuba Maciek</DataSourceViewID>
+            <TableID>dbo_course_FACT</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Passenger FACT 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="387ed321-f8a1-4554-a2af-249d2f46d4e7">
+          <ID>Passenger FACT</ID>
+          <Name>Passenger FACT</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="49a14f80-b557-4cf1-8352-6f1955552cd3">
+            <DataSourceViewID>Kuba Maciek</DataSourceViewID>
+            <TableID>dbo_passenger_FACT</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
